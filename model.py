@@ -37,3 +37,8 @@ def set_new_position(direction, snake, board):
         head_x = head_x - 1
         board[(head_x, head_y)] = "SnakeHead"
         snake[0] = (head_x, head_y)
+
+def create_apple(_board):
+    apple = [(random.randint(0, 19), random.randint(0, 19))]
+    _board[apple[0]] = "Apple"
+    return apple

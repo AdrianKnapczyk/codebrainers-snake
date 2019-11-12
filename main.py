@@ -1,6 +1,6 @@
 import pygame
 
-from model import initialize_snake, initialize_board, set_new_position
+from model import initialize_snake, initialize_board, set_new_position, create_apple
 from view import draw
 
 step = 20
@@ -29,13 +29,10 @@ def turn(direction):
         return 1
     return direction
 
-
-
-
-
 head_direction = 0
 board = initialize_board()
 snake = initialize_snake(board)
+apple = create_apple(board)
 
 while True:
     for event in pygame.event.get():
