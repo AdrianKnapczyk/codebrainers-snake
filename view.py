@@ -19,3 +19,4 @@ def draw(board, screen):
             head_rect = pygame.Rect(head_x, head_y, 20, 20)
             pygame.draw.rect(screen, (255, 0, 0), head_rect)
 
+
