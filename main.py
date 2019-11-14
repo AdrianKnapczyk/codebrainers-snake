@@ -9,8 +9,6 @@ height = 400
 dimensions = (width,height)
 
 
-
-
 pygame.init()
 screen = pygame.display.set_mode((dimensions))
 pygame.display.set_caption("codebrainers-snake")
